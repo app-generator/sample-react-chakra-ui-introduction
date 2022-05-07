@@ -50,10 +50,9 @@ const Nav = ({ onOpen, ref }) => {
 
         {isLargerThanMD ? (
           <>
-            <Text fontSize="md" mr="10">
-              About
-            </Text>
-            <Text fontSize="md">More Apps</Text>
+            <a target="_blank" rel="noreferrer" href="https://appseed.us/apps/react/" fontSize="md" mr="10">
+              More Apps
+            </a>
           </>
         ) : (
           <IconButton ref={ref} onClick={onOpen}>

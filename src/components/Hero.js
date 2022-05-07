@@ -29,13 +29,12 @@ const Hero = () => {
           mb="4"
         >
           {' '}
-          Let's scale your business
+          Chakra UI Sample
         </Text>
 
         <Text mb="6" fontSize={isLargerThanLG ? 'lg' : 'base'} opacity={0.7}>
-          Hire professionals who will help your business make 10X your previous
-          income. With over 5years experience in Marketing & Business strategy,
-          we are your best client.
+          Sample Code for the blog article React MUI Components - Learn by Coding. The article explains how to code from scratch all components: 
+          navBar, hero section, app features, contact, and footer. 
         </Text>
 
         <Button
@@ -45,8 +44,12 @@ const Hero = () => {
           h="50px"
           size={isLargerThanLG ? 'lg' : 'md'}
           mb={isLargerThanLG ? '0' : '10'}
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href='https://blog.appseed.us/chakra-ui-react-coding-landing-page/';
+            }}
         >
-          HIRE US
+          Read More
         </Button>
       </Box>
       <Spacer />
